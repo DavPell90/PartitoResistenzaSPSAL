@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina dedicata alla Resistenza SPSAL con elementi interattivi e informazioni aggiuntive.">
+    <title>Partito Resistenza SPSAL</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffdddd, #ffffff);
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #ff4444;
+            color: white;
+            padding: 20px;
+            font-size: 3rem;
+            text-shadow: 2px 2px #660000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #ff4444;
+            text-shadow: 3px 3px #660000;
+            margin: 20px 0;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            gap: 20px;
+        }
+        .content {
+            flex: 2;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .side-column {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 1.5rem;
+            color: #444;
+            line-height: 1.8;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #cc0000;
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button-group button {
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button-group button:hover {
+            background-color: #cc0000;
+        }
+        .description {
+            font-size: 1rem;
+            color: #777;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #777;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-top: 2px solid #ff4444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ICF NON CI AVRAI MAI</h1>
+    </header>
+
+    <div class="logo">PARTITO RESISTENZA SPSAL</div>
+
+    <div class="main-container">
+        <div class="side-column">
+            <div class="button-group">
+                <button onclick="alert('Chiamata alle telecamere Report attivata!')">CHIAMA TELECAMERE REPORT</button>
+                <button onclick="alert('Carabinieri allertati!')">CHIAMA CARABINIERI</button>
+                <button onclick="alert('Modifica modelli avviata!')">MODIFICA MODELLI</button>
+            </div>
+            <div class="description">
+                clicca qui per modificare tutti i modelli presenti nella cartella modulistica
+            </div>
+        </div>
+
+        <div class="content">
+            <p><span style="font-size: 2rem; font-weight: bold; color: #ff4444; text-shadow: 2px 2px #660000;">QUESTO È UN MESSAGGIO FORTE E CHIARO! NOI SIAMO LA RESISTENZA! NOI NON MOLLIAMO! NOI COMBATTIAMO!!!</span></p>
+            <iframe src="https://www.youtube.com/embed/vZraNnWnYXE?autoplay=1&mute=1" allowfullscreen></iframe>
+        </div>
+
+        <div class="side-column">
+            <h2>Unisciti a noi</h2>
+            <form class="form-container">
+                <input type="text" placeholder="Il tuo nome" required>
+                <input type="email" placeholder="La tua email" required>
+                <button type="submit">Invia</button>
+            </form>
+            <p class="description">cliccando su invia confermi di non avere amicizie con marescialli della provincia</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Partito Resistenza SPSAL. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
