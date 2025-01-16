@@ -45,7 +45,7 @@
         }
 
         .content, .side-column {
-            flex: 1 1 300px; /* Flex per adattare larghezza minima di 300px */
+            flex: 1 1 300px;
             padding: 20px;
             background-color: #fff;
             border-radius: 15px;
@@ -119,6 +119,12 @@
             border-top: 2px solid #ff4444;
         }
 
+        .description {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 10px;
+        }
+
         /* Media Query per dispositivi mobili */
         @media (max-width: 768px) {
             header {
@@ -181,6 +187,7 @@
                 <button onclick="alert('Chiamata alle telecamere Report attivata!')">CHIAMA TELECAMERE REPORT</button>
                 <button onclick="alert('Carabinieri allertati!')">CHIAMA CARABINIERI</button>
                 <button onclick="alert('Modifica modelli avviata!')">MODIFICA MODELLI</button>
+                <div class="description">Clicca qui per modificare tutti i modelli presenti nella cartella modulistica.</div>
             </div>
         </div>
 
@@ -195,6 +202,7 @@
                 <input type="text" placeholder="Il tuo nome" required>
                 <input type="email" placeholder="La tua email" required>
                 <button type="submit">Invia</button>
+                <p class="description">Cliccando su invia confermi di non avere amicizie con marescialli della provincia.</p>
             </form>
         </div>
     </div>
