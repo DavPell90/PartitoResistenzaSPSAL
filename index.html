@@ -27,6 +27,35 @@
             z-index: 1000;
         }
 
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #ff4444;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #cc0000;
+            border-radius: 5px;
+        }
+
         .logo {
             font-size: 3rem;
             font-weight: bold;
@@ -125,6 +154,21 @@
             margin-top: 10px;
         }
 
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         /* Media Query per dispositivi mobili */
         @media (max-width: 768px) {
             header {
@@ -177,6 +221,13 @@
 <body>
     <header>
         <h1>ICF NON CI AVRAI MAI</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi siamo</a></li>
+                <li><a href="#join">Unisciti</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="logo">PARTITO RESISTENZA SPSAL</div>
@@ -206,6 +257,13 @@
             </form>
         </div>
     </div>
+
+    <section id="gallery" class="gallery">
+        <h2>Galleria</h2>
+        <img src="https://via.placeholder.com/200" alt="Immagine 1">
+        <img src="https://via.placeholder.com/200" alt="Immagine 2">
+        <img src="https://via.placeholder.com/200" alt="Immagine 3">
+    </section>
 
     <footer>
         <p>&copy; 2025 Partito Resistenza SPSAL. Tutti i diritti riservati.</p>
